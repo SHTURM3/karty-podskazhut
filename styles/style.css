@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+:root{
+  --accent-color: #FFAB6B;
+  --main-font: Raleway, Arial, Helvetica, serif;
+  --accent-font: 'STIX Two Text', 'Arial', 'Helvetica';
+}
+
+.page{
+  background-color: var(--bg-color, #F3EFEC); 
+  color: var(--text-color, #312A4E);
+}
+
+.header{
+  padding-top: 10%;
+}
+
+.heading{
+  font-family: var(--accent-font);
+  line-height: 90%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-section{
+  padding: 0 5vi;
+}
+
+.header__title{
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  margin-bottom: 40px;
+}
+
+.content__title{
+  font-size: 30px;
+  margin: 7% 0 2.5% 0;
+}
