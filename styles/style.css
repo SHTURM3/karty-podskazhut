@@ -56,3 +56,76 @@ figure {
   font-size: 30px;
   margin: 7% 0 2.5% 0;
 }
+
+.content__text-block{
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.content__text-block_type_first-lettered{
+
+}
+
+.content__text-block_type_first-lettered .content__paragraph:first-child::first-letter{
+  display: inline-block;
+  background-color: var(--accent-color);
+  font-weight: 600;
+  padding: 0 4px;
+  margin-right: 1px;
+}
+    
+.content__link{
+  color: currentColor;
+}
+
+.content__text-block .content__paragraph:not(:last-child){
+  margin-bottom: 1.5em;
+}
+
+.content__blockquote{
+  font-style: italic;
+  line-height: 50px;
+  width: 75%;
+  margin:0 auto 1.5em auto;
+}
+
+.content__list{
+  list-style-type: none;
+  padding-left: 40px;
+}
+
+.content__item{
+  position: relative;
+}
+
+.content__item::before{
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -25px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url('../images/marker-light.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.content__item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+/* .content__figure{
+  margin: 7% 0;
+  width: calc(100% + );
+}
+
+.content__picture-caption{
+
+}
+
+.content__picture{
+  width: 100%;
+} */
