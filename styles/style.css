@@ -117,15 +117,22 @@ figure {
   margin-bottom: 10px;
 }
 
-/* .content__figure{
+.content__figure{
   margin: 7% 0;
-  width: calc(100% + );
+  width: calc(100% + 10vi);
+  position: relative;
+  right: 5vi;
 }
 
 .content__picture-caption{
+  font-family: var(--main-font);
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--text-color, #312A4E);
 
+  
 }
 
 .content__picture{
   width: 100%;
-} */
+}
