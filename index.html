@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="page theme_dark">
+  <body class="page">
     <header class="header">
       <h1 class="heading content-section header__title">Карты подскажут</h1>
 
@@ -27,10 +27,7 @@
             <button 
               class="
               header__theme-button 
-              header__theme-button_type_dark
-              header__theme-button_is-active"
-
-              disabled
+              header__theme-button_type_dark"
             >
             Тёмная
             </button>
@@ -40,7 +37,10 @@
             <button 
               class="
               header__theme-button 
-              header__theme-button_type_light"
+              header__theme-button_type_light
+              header__theme-button_is-active"
+
+              disabled
             >
             Светлая
             </button>
@@ -71,13 +71,13 @@
 
       <figure class="content__figure">
           <picture>
-            <source srcset="./images/cards-1x.avif" type="image/avif">
-            <source srcset="./images/cards-1x.webp" type="image/webp">
-            <img class="content__picture" src="./images/cards-1x.png" alt="Изображение колоды Oblique Strategies" loading="lazy">
+            <source srcset="./images/cards-1x.avif 1x, ./images/cards-2x.avif 2x" type="image/avif">
+            <source srcset="./images/cards-1x.webp 1x, ./images/cards-2x.webp 2x" type="image/webp">
+            <img class="content__picture" src="./images/cards-1x.png 1x, ./images/cards-2x.png 2x," alt="Изображение колоды Oblique Strategies" loading="lazy">
           </picture>
           
           <figcaption class="content__picture-caption">
-            Колода Oblique Strategies
+            <p>Колода Oblique Strategies</p>
           </figcaption>
       </figure>
 
@@ -99,7 +99,9 @@
         </p>
 
         <blockquote class="content__blockquote">
-          «Эти карты появились, потому что я оказывался в рабочих ситуациях (особенно в звукозаписывающих студиях), когда из-за паники быстро забывал, что кроме самых очевидных решений были и другие — косвенные. И часто именно такие неочевидные способы выдавали гораздо более интересные результаты, чем решения „в лоб“».
+          <p>
+            «Эти карты появились, потому что я оказывался в рабочих ситуациях (особенно в звукозаписывающих студиях), когда из-за паники быстро забывал, что кроме самых очевидных решений были и другие — косвенные. И часто именно такие неочевидные способы выдавали гораздо более интересные результаты, чем решения „в лоб“».
+          </p>
         </blockquote>
 
         <p class="content__paragraph">
@@ -107,7 +109,7 @@
         </p>
 
         <p class="content__paragraph">
-          И кстати, сейчас необязательно охотиться за редкими физическими колодами Oblique Strategies — тем более, что их моментально разбирают фанаты Ино. Есть довольно симпатичные <a class="content__link" href="#" target="_blank">веб-сайты</a> с диджитал-эквивалентами карточек и приложения для <a class="content__link" href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011" target="_blank">iOS</a> и <a class="content__link" href="https://play.google.com/store/apps/details?id=com.monoloco.obliquestrategies&hl=en_US&gl=US&pli=1" target="_blank">Android</a> .
+          И кстати, сейчас необязательно охотиться за редкими физическими колодами Oblique Strategies — тем более, что их моментально разбирают фанаты Ино. Есть довольно симпатичные <a class="content__link" href="#" target="_blank">веб-сайты</a> с диджитал-эквивалентами карточек и приложения <a class="content__link" href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011" target="_blank">для iOS</a> и <a class="content__link" href="https://play.google.com/store/apps/details?id=com.monoloco.obliquestrategies&hl=en_US&gl=US&pli=1" target="_blank">Android</a>.
         </p>
       </div>
 
@@ -121,10 +123,10 @@
 
       <div class="content__text-block">
         <ul class="content__list">
-          <li class="content__item">Дэвид Боуи во время записи Берлинской трилогии;</li>
-          <li class="content__item">Talking Heads и Дэвид Бирн в сольной карьере;</li>
-          <li class="content__item">Coldplay;</li>
-          <li class="content__item">MGMT.</li>
+          <li>Дэвид Боуи во время записи Берлинской трилогии;</li>
+          <li>Talking Heads и Дэвид Бирн в сольной карьере;</li>
+          <li>Coldplay;</li>
+          <li>MGMT.</li>
         </ul>
       </div>
 
